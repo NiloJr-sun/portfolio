@@ -25,7 +25,18 @@ jobs:
           cd web
           yarn install --frozen-lockfile
 
+      - name: Run ESLint
+        run: |
+          cd web
+          yarn lint
+
+      - name: Run Prettier
+        run: |
+          cd web
+          yarn format:check
+          
       - name: Run Build
         run: |
           cd web
           yarn build
+
