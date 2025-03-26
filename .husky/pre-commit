@@ -1,2 +1,2 @@
 #!/bin/sh
-cd web && yarn lint
+cd web && yarn lint && yarn format
